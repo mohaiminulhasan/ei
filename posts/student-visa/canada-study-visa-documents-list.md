@@ -1,0 +1,29 @@
+---
+title: "কানাডায় স্টাডি ভিসার জন্য প্রয়োজনীয় কাগজপত্রের তালিকা"
+date: "2022-06-06"
+---
+-   National ID (Original)
+-   National ID (Translated and Notarized)
+-   Passport
+-   Old Passport
+-   Previous Visa Pages
+-   Digital Photo (Canada Size)
+-   University Offer Letter
+-   Study Plan
+-   Curriculum Vitae (CV)
+-   IELTS Certificate
+-   Police Clearance Certificate
+-   SSC/O-Level, HSC/A-Level, Bachelor’s & Master’s Certificates & Transcripts
+-   Summary of Financial Planning
+-   Letter of Explanation for Available Funds
+-   Sponsor’s Affidavit of Financial Support
+-   CA Evaluation
+-   Sponsor’s Bank Statement
+-   Sponsor’s Bank Solvency Certificate
+-   Sponsor’s Taxpayer’s Identification Number (TIN) Certificate
+-   Sponsor’s Tax Clearance Certificate and Assessment for last 2 years
+-   Sponsor’s Employment Documents
+-   Sponsor’s NID
+-   Sponsor’s Passport (if available)
+-   Upfront Medical Document
+-   And a few IMM forms mentioned in the application portal

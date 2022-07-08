@@ -1,0 +1,11 @@
+.listItem {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.date {
+  color: gray;
+}
