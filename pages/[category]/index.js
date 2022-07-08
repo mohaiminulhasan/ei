@@ -12,7 +12,7 @@ export default function Category({ posts }) {
     <Layout>
       <ul className={styles.postList}>
         {posts.map((post, index) => (
-          <PostListItem src={`/${category}/${post.id}`} title={post.title} date={post.date} />
+          <PostListItem key={index} src={`/${category}/${post.id}`} title={post.title} date={post.date} />
         ))}
       </ul>
     </Layout>
