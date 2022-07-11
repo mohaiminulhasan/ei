@@ -1,6 +1,6 @@
 ---
 title: "কানাডায় স্টাডি ভিসার জন্য প্রয়োজনীয় কাগজপত্রের তালিকা"
-date: "2022-06-06"
+date: "2022-07-10"
 ---
 -   National ID (Original)
 -   National ID (Translated and Notarized)
@@ -17,6 +17,7 @@ date: "2022-06-06"
 -   Summary of Financial Planning
 -   Letter of Explanation for Available Funds
 -   Sponsor’s Affidavit of Financial Support
+-   All assets documents (property, FD, Savings etc.)
 -   CA Evaluation
 -   Sponsor’s Bank Statement
 -   Sponsor’s Bank Solvency Certificate
