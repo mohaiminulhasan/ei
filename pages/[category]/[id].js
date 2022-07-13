@@ -3,6 +3,16 @@ import { getAllPostIds, getPostData } from "../../lib/posts"
 import Layout from '../../components/layout.js';
 import styles from '../../styles/Post.module.css';
 import Link from "next/link";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  Text,
+  Divider,
+  Container,
+  Heading
+} from '@chakra-ui/react'
+import { TitleExtractor } from '../../lib/utils';
 
 export default function Post({ postData }) {
   const router = useRouter();
@@ -10,12 +20,26 @@ export default function Post({ postData }) {
 
   return (
     <Layout>
-      <div className={styles.main}>
-        <Link href={`/${category}/`}>
-          <a>Go back</a>
-        </Link>
+      <Breadcrumb>
+        <BreadcrumbItem>
+          <BreadcrumbLink href='/'>Home</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <BreadcrumbLink href={`/${category}`}>{ TitleExtractor(category) }</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem isCurrentPage>
+          <Text>{ postData.title }</Text>
+        </BreadcrumbItem>
+      </Breadcrumb>
+
+      <Divider mt='4' mb='4' />
+
+      <Container>
+        <Heading size='lg' mb='4'>{ postData.title }</Heading>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>
-      </div>
+      </Container>
     </Layout>
   );
 }
