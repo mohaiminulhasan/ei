@@ -1,7 +1,8 @@
 // import styles from './layout.module.css';
 import icon from '../public/ei_icon.png';
 import Image from 'next/image';
-import { chakra, Box, LinkBox, Flex, Heading, Spacer, Link, Button, LinkOverlay } from '@chakra-ui/react';
+import { chakra, Text, Box, LinkBox, Flex, Heading, Spacer, HStack, Button, LinkOverlay, useMediaQuery, IconButton } from '@chakra-ui/react';
+import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 
 export default function Layout({ children }) {
@@ -11,6 +12,8 @@ export default function Layout({ children }) {
   const NextImage = chakra(Image, {
     shouldForwardProp: (prop) => ["src"].includes(prop)
   });
+
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   return (
     <>
@@ -26,16 +29,28 @@ export default function Layout({ children }) {
       </Box>
 
       <Spacer/>
+
+      <Button display={isDesktop ? 'flex' : 'none'} justifyContent='start'>
+        <HStack>
+          <SearchIcon color='gray'/>
+          <Text fontWeight='light' color='gray'>Search the knowledge base</Text>
+        </HStack>
+      </Button>
+
+      <Spacer/>
       
-      <Box>
+      <Flex gap={4} display={isDesktop ? 'flex' : 'none'}>
         <NextLink href="/" passHref>
+          
           <Button as="a">Home</Button>
         </NextLink>
 
         <NextLink href="#" passHref>
-          <Button as="a">Join our Discord</Button>
+          <Button as="a">Discord</Button>
         </NextLink>
-      </Box>
+      </Flex>
+
+      <IconButton display={isDesktop ? 'none' : 'flex'} icon={<HamburgerIcon/>} />
     </Flex>
 
     <Box p='4'>

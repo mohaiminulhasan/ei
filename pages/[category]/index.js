@@ -2,15 +2,12 @@ import { getAllPosts } from '../../lib/posts';
 import { useRouter } from 'next/router';
 import Layout from '../../components/layout.js';
 import PostListItem from '../../components/PostListItem';
-import styles from '../../styles/Category.module.css';
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   Text,
   Divider,
-  Box,
-  Flex,
   Container
 } from '@chakra-ui/react'
 import { TitleExtractor } from '../../lib/utils';
@@ -45,7 +42,7 @@ export default function Category({ posts }) {
 
 export function getStaticPaths() {
   return {
-    paths: [{ params: { category: 'student-visa' }}, { params: { category: 'others' }}],
+    paths: [{ params: { category: 'student-permit' }}, { params: { category: 'others' }}],
     fallback: false
   }
 }
