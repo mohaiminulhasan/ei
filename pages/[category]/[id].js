@@ -45,7 +45,7 @@ export default function Post({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const paths = await getAllPostIds('student-visa');
+  const paths = await getAllPostIds('student-permit');
   return {
     paths,
     fallback: false,
